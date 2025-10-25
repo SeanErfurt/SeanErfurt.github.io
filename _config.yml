@@ -21,8 +21,8 @@ description: >- # this means to ignore newlines until "baseurl:"
   Currently pursuing my true passion of working on electrical and mechanical systems."
 twitter_username: twitter_username
 github_username: SeanErfurt
-minimal_mistakes_skin: default
-search: true
+minimal_mistakes_skin: air
+search: false
 
 # Build settings
 markdown: kramdown
@@ -61,9 +61,9 @@ author:
   name   : "Sean Erfurt"
   avatar : "/assets/images/bio-photo.jpg"
   bio    : >- 
-    "Skilled software engineer with over 8 years of experience in software development 
+    Skilled software engineer with over 8 years of experience in software development 
     and data engineering, with a focus on web scraping and data pipelines. 
-    Currently pursuing my true passion of working on electrical and mechanical systems."
+    Currently pursuing my true passion of working on electrical and mechanical systems.
   links:
     - label: "LinkedIn"
       icon: "fas fa-fw fa-link"
@@ -99,7 +99,7 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
-      comments: true
+      comments: false
       share: true
       related: true
   # _pages
@@ -109,6 +109,19 @@ defaults:
     values:
       layout: single
       author_profile: true
+  # _portfolio
+  - scope:
+      path: ""
+      type: portfolio
+    values:
+      layout: single
+      author_profile: false
+      share: true
+
+collections:
+  portfolio:
+    output: true
+    permalink: /:collection/:path/
 
 category_archive:
   type: liquid

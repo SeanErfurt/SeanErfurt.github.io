@@ -3,4 +3,4 @@ permalink: /about/
 title: "About"
 ---
 
-{{description}}
+{{ site.description }}
